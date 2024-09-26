@@ -1,0 +1,43 @@
+<% layout('layouts/boilerplate') -%>
+
+    <body>
+        <div class="row col-8 offset-2">
+            <h1>Edit Contact</h1>
+            <form action="/contacts/<%= contact._id %>?_method=PUT" method="post" class="row mt-2 needs-validation" novalidate>
+                <!-- First name -->
+                <div class="mb-3">
+                    <label for="contact-firstname" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="contact-firstname" placeholder="John"
+                        name="contact[firstname]" value="<%= contact.firstname %>" required>
+                </div>
+                <!-- Last name -->
+                <div class="mb-3">
+                    <label for="contact-lastname" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="contact-lastname" placeholder="Doe"
+                        name="contact[lastname]" value="<%= contact.lastname %>" required>
+                </div>
+                <!-- Email -->
+                <div class="mb-3">
+                    <label for="contact-email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="contact-email" placeholder="john@example.com"
+                        name="contact[email]" value="<%= contact.email %>" required>
+                </div>
+                <!-- Phone number -->
+                <div class="mb-3">
+                    <label for="contact-phonenumber" class="form-label">Phone Number</label>
+                    <input type="number" class="form-control" id="contact-phonenumber" placeholder="91xxxx8080"
+                        name="contact[phonenumber]" value="<%= contact.phonenumber %>" required>
+                </div>
+                <!-- Address -->
+                <div class="mb-3">
+                    <label for="contact-address" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="contact-address"
+                        placeholder="531 Street, Nowhere, Universe." name="contact[address]"
+                        value="<%= contact.address %>" required>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Save Changes</button>
+                </div>
+            </form>
+        </div>
+    </body>

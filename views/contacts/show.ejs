@@ -1,0 +1,58 @@
+<% layout('layouts/boilerplate') -%>
+
+    <body>
+        <div class="row col-8 offset-2">
+            <h1>Contact Details</h1>
+            <form action="/contacts/<%= contact._id %>?_method=PUT" method="post" class="row mt-2 needs-validation"
+                novalidate>
+                <!-- First name -->
+                <div class="mb-3 row">
+                    <label for="contact-firstname" class="col-sm-2 col-form-label">First Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" readonly class="form-control" id="contact-firstname"
+                            name="contact[firstname]" value="<%= contact.firstname %>">
+                    </div>
+                </div>
+                <!-- Last name -->
+                <div class="mb-3 row">
+                    <label for="contact-lastname" class="col-sm-2 col-form-label">Last Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" readonly class="form-control" id="contact-lastname" name="contact[lastname]"
+                            value="<%= contact.lastname %>">
+                    </div>
+                </div>
+                <!-- Email -->
+                <div class="mb-3 row">
+                    <label for="contact-email" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                        <input type="text" readonly class="form-control" id="contact-email" name="contact[email]"
+                            value="<%= contact.email %>">
+                    </div>
+                </div>
+
+                <!-- Phone number -->
+                <div class="mb-3 row">
+                    <label for="contact-phonenumber" class="col-sm-2 col-form-label">Phone Number</label>
+                    <div class="col-sm-10">
+                        <input type="number" readonly class="form-control" id="contact-phonenumber"
+                            placeholder="91xxxx8080" name="contact[phonenumber]" value="<%= contact.phonenumber %>">
+                    </div>
+                </div>
+
+                <!-- Address -->
+                <div class="mb-3 row">
+                    <label for="contact-address" class="col-sm-2 col-form-label">Address</label>
+                    <div class="col-sm-10">
+                        <input type="text" readonly class="form-control" id="contact-address" placeholder="91xxxx8080"
+                            name="contact[address]" value="<%= contact.address %>">
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="col-12 mt-3">
+                    <a href="/contacts/<%= contact._id %>/edit" class="btn btn-primary">Edit</a>
+                    <a href="/contacts/<%= contact._id %>/delete" class="btn btn-danger mx-3">Delete</a>
+                </div>
+            </form>
+        </div>
+    </body>
