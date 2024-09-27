@@ -118,26 +118,47 @@ The application follows the **MVC (Model-View-Controller)** architecture:
 
 - **Controllers (Part of MVC Framework)**
 
-The following controllers handle the business logic in the application:
+      The following controllers handle the business logic in the application:
 
-| **Controller**     | **HTTP Method** | **Description**                                 |
-| ------------------ | --------------- | ----------------------------------------------- |
-| `renderDeleteForm` | GET             | Renders the contact deletion confirmation page. |
-| `renderEditForm`   | GET             | Renders the contact edit form.                  |
-| `renderNewForm`    | GET             | Renders the form to create a new contact.       |
-| `destroyContact`   | DELETE          | Deletes an existing contact.                    |
-| `updateContact`    | PUT             | Updates an existing contact.                    |
-| `showContact`      | GET             | Displays a single contact's details.            |
-| `createContact`    | POST            | Creates a new contact.                          |
-| `index`            | GET             | Displays a list of all contacts.                |
+      | **Controller**     | **HTTP Method** | **Description**                                 |
+      | ------------------ | --------------- | ----------------------------------------------- |
+      | `renderDeleteForm` | GET             | Renders the contact deletion confirmation page. |
+      | `renderEditForm`   | GET             | Renders the contact edit form.                  |
+      | `renderNewForm`    | GET             | Renders the form to create a new contact.       |
+      | `destroyContact`   | DELETE          | Deletes an existing contact.                    |
+      | `updateContact`    | PUT             | Updates an existing contact.                    |
+      | `showContact`      | GET             | Displays a single contact's details.            |
+      | `createContact`    | POST            | Creates a new contact.                          |
+      | `index`            | GET             | Displays a list of all contacts.                |
 
 ---
 
 ## **Error Handling**
 
-1. **WrapAsync**: A utility function that wraps asynchronous routes with a `try/catch` block, ensuring that any errors are caught and passed to the error handler middleware.
+The application handles errors at multiple levels to ensure robustness and user experience.
 
-2. **Custom Error Class (ExpressError)**: A custom error class, `ExpressError`, was implemented to extend JavaScript's default `Error` object, allowing for custom error messages and status codes.
+1. **WrapAsync**: A function wrapper for asynchronous routes that captures and forwards any errors to the central error handler using `try/catch` blocks.
+2. **Custom Error Class (ExpressError)**:
+   - A custom error class `ExpressError` is used to manage and display meaningful error messages throughout the application.
+3. **Error View**:
+   - All errors are rendered using the `error.ejs` view, providing a user-friendly interface when errors occur.
+
+## **Future Scope**
+
+The following features can be implemented in future versions of the application:
+
+1. **Session Management**
+
+   - Implement session handling for enhanced control and security of user data.
+
+2. **User Authentication**
+
+   - Implement user login and signup functionality to ensure only registered users can access the application.
+
+3. **Authorization**
+   - Differentiate user roles with authorization, so each user can only manage their own contacts.
+4. **Integrity**
+   - Ensure that each user has access only to their own set of contacts to maintain data privacy and integrity.
 
 ## **End**
 
