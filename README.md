@@ -118,18 +118,18 @@ The application follows the **MVC (Model-View-Controller)** architecture:
 
 - **Controllers (Part of MVC Framework)**
 
-      The following controllers handle the business logic in the application:
+The following controllers handle the business logic in the application:
 
-      | **Controller**     | **HTTP Method** | **Description**                                 |
-      | ------------------ | --------------- | ----------------------------------------------- |
-      | `renderDeleteForm` | GET             | Renders the contact deletion confirmation page. |
-      | `renderEditForm`   | GET             | Renders the contact edit form.                  |
-      | `renderNewForm`    | GET             | Renders the form to create a new contact.       |
-      | `destroyContact`   | DELETE          | Deletes an existing contact.                    |
-      | `updateContact`    | PUT             | Updates an existing contact.                    |
-      | `showContact`      | GET             | Displays a single contact's details.            |
-      | `createContact`    | POST            | Creates a new contact.                          |
-      | `index`            | GET             | Displays a list of all contacts.                |
+| **Controller**     | **HTTP Method** | **Description**                                 |
+| ------------------ | --------------- | ----------------------------------------------- |
+| `renderDeleteForm` | GET             | Renders the contact deletion confirmation page. |
+| `renderEditForm`   | GET             | Renders the contact edit form.                  |
+| `renderNewForm`    | GET             | Renders the form to create a new contact.       |
+| `destroyContact`   | DELETE          | Deletes an existing contact.                    |
+| `updateContact`    | PUT             | Updates an existing contact.                    |
+| `showContact`      | GET             | Displays a single contact's details.            |
+| `createContact`    | POST            | Creates a new contact.                          |
+| `index`            | GET             | Displays a list of all contacts.                |
 
 ---
 
