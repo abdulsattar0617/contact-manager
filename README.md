@@ -103,3 +103,8 @@ The user interface follows the **MVC (Model-View-Controller)** architecture:
 1. **WrapAsync**: A utility function that wraps asynchronous routes with a `try/catch` block, ensuring that any errors are caught and passed to the error handler middleware.
 
 2. **Custom Error Class (ExpressError)**: A custom error class, `ExpressError`, was implemented to extend JavaScript's default `Error` object, allowing for custom error messages and status codes.
+
+
+## **End**
+Thank you for using the Contact Management Application. We appreciate your interest and hope this project meets your needs!
+
