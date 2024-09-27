@@ -7,12 +7,7 @@
 
 The **Contact Management Application** (CMA) is a web-based application developed using Node.js, Express.js, MongoDB, and EJS. It allows users to manage their contacts with essential CRUD operations—Create, Read, Update, and Delete. The application ensures proper data validation and error handling, providing a user-friendly interface with persistent storage.
 
----
-
-## Video Tutorial
-
-[![Watch the video](https://img.youtube.com/vi/your-video-id/maxresdefault.jpg)](https://www.youtube.com/watch?v=your-video-id)
-
+--- 
 
 ## **User Instructions**
 
