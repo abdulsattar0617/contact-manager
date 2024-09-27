@@ -1,5 +1,5 @@
 module.exports.ErrorHandler = (err, req, res, next) => {
-  console.log(err);
+  // console.log(err);
 
   let { statusCode = 500, message = "Something went wrong!" } = err;
 

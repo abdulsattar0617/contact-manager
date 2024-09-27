@@ -9,6 +9,11 @@ The **Contact Management Application** (CMA) is a web-based application develope
 
 ---
 
+## Video Tutorial
+
+[![Watch the video](https://img.youtube.com/vi/your-video-id/maxresdefault.jpg)](https://www.youtube.com/watch?v=your-video-id)
+
+
 ## **User Instructions**
 
 ### **Prerequisites**
@@ -40,19 +45,24 @@ The **Contact Management Application** (CMA) is a web-based application develope
 1. **Create a Contact**:
    - Navigate to `/contacts/new`.
    - Fill in the form with contact details and click "Submit".
+   - [Watch tutorial - Youtube](https://youtu.be/ql4YLii3z8Q)
+
 2. **Read/Display Contacts**:
 
    - Visit `/contacts` to see all contacts.
    - Click on a contact to view detailed information.
+   - [Watch tutorial - Youtube](https://youtu.be/E-0-gpQ0AhM)
 
 3. **Update a Contact**:
 
    - Go to `/contacts/:id/edit`.
    - Modify the fields and click "Update" to save changes.
+   - [Watch tutorial - Youtube](https://youtu.be/mu7DFiD0_AI)
 
 4. **Delete a Contact**:
    - Navigate to `/contacts/:id/delete`.
    - Confirm the deletion to remove the contact permanently.
+   - [Watch tutorial - Youtube](https://youtu.be/oocmdC0MzdQ)
 
 ---
 
@@ -119,7 +129,7 @@ The application follows the **MVC (Model-View-Controller)** architecture:
     - **Navbar** (`navbar.ejs`) – Contains navigation and branding.
     - **Footer** (`footer.ejs`) – Footer component for all pages.
 
-- **Controllers (Part of MVC Framework)**
+- **Controllers**
 
 The following controllers handle the business logic in the application:
 
