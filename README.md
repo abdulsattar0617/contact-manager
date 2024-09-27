@@ -82,19 +82,20 @@ The **Contact Management Application** (CMA) is a web-based application develope
 The user interface follows the **MVC (Model-View-Controller)** architecture:
 
 - **Views**:
-  - **Index** (`index.ejs`) – Displays all contacts.
-  - **Show** (`show.ejs`) – Renders a single contact’s details.
-  - **Edit** (`edit.ejs`) – Displays the form for editing an existing contact.
-  - **Delete** (`delete.ejs`) – Shows a confirmation dialog for deleting a contact.
-  - **New** (`new.ejs`) – Displays the form for adding a new contact.
-  - **Error** (`error.ejs`) – Error page for handling invalid routes or requests.
+   - **Contacts**:
+      - **Index** (`index.ejs`) – Displays all contacts.
+      - **Show** (`show.ejs`) – Renders a single contact’s details.
+      - **Edit** (`edit.ejs`) – Displays the form for editing an existing contact.
+      - **Delete** (`delete.ejs`) – Shows a confirmation dialog for deleting a contact.
+      - **New** (`new.ejs`) – Displays the form for adding a new contact.
+      - **Error** (`error.ejs`) – Error page for handling invalid routes or requests.
 
-- **Layout**:
-  - **Boilerplate** (`boilerplate.ejs`) – A master layout that wraps all views for consistent structure.
-  
-- **Includes**:
-  - **Navbar** (`navbar.ejs`) – Contains navigation and branding.
-  - **Footer** (`footer.ejs`) – Footer component for all pages.
+   - **Layouts**:
+      - **Boilerplate** (`boilerplate.ejs`) – A master layout that wraps all views for consistent structure.
+   
+   - **Includes**:
+      - **Navbar** (`navbar.ejs`) – Contains navigation and branding.
+      - **Footer** (`footer.ejs`) – Footer component for all pages.
 
 ---
 
