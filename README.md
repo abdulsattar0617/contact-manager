@@ -14,7 +14,7 @@ The **Contact Management Application** (CMA) is a web-based application develope
 ### **Installation**
 1. Clone the repository: 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/abdulsattar0617/contact-manager.git
    ```
 2. Navigate to the project directory: 
    ```bash
@@ -70,9 +70,9 @@ The **Contact Management Application** (CMA) is a web-based application develope
   
 ### **Schema Fields**
 - **First Name**: `String` (Required)
-- **Last Name**: `String`
+- **Last Name**: `String` (Required)
 - **Email**: `String` (Required, must be unique and valid)
-- **Phone Number**: `String` (Required, must be valid)
+- **Phone Number**: `String` (Required, must be valid, length 10 and all letters must belong to 0-9 range)
 - **Address**: `String`
 
 ---
