@@ -40,24 +40,24 @@ The **Contact Management Application** (CMA) is a web-based application develope
 1. **Create a Contact**:
    - Navigate to `/contacts/new`.
    - Fill in the form with contact details and click "Submit".
-   - [Watch tutorial - Youtube](https://youtu.be/ql4YLii3z8Q)
+   - [Watch tutorial - Youtube](https://youtu.be/lLIfVG7EOFU)
 
 2. **Read/Display Contacts**:
 
    - Visit `/contacts` to see all contacts.
    - Click on a contact to view detailed information.
-   - [Watch tutorial - Youtube](https://youtu.be/E-0-gpQ0AhM)
+   - [Watch tutorial - Youtube](https://youtu.be/N6osRETM-Gs)
 
 3. **Update a Contact**:
 
    - Go to `/contacts/:id/edit`.
    - Modify the fields and click "Update" to save changes.
-   - [Watch tutorial - Youtube](https://youtu.be/mu7DFiD0_AI)
+   - [Watch tutorial - Youtube](https://youtu.be/xgZxUXU6Wck)
 
 4. **Delete a Contact**:
    - Navigate to `/contacts/:id/delete`.
    - Confirm the deletion to remove the contact permanently.
-   - [Watch tutorial - Youtube](https://youtu.be/oocmdC0MzdQ)
+   - [Watch tutorial - Youtube](https://youtu.be/E4jLuMmpdjw)
 
 ---
 
